@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ScreenTalk 🎬</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./css/styles.css" rel="stylesheet" />
+  <!-- Socket.IO client from CDN -->
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h1>ScreenTalk 🎬</h1>
+
+    <div class="connect">
+      <input id="room" placeholder="Enter room (e.g., bollywood, anime)" />
+      <input id="username" placeholder="Username" />
+      <button id="joinBtn">Join Room</button>
+    </div>
+
+    <div class="chat">
+      <div id="log"></div>
+      <div class="composer">
+        <input id="message" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Change to your backend URL (once on VPS): e.g. "https://api.screentalk.yourdomain.com"
+    window.BACKEND_URL = "http://157.173.220.198:3001";
+  </script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
