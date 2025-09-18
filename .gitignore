@@ -1,0 +1,13 @@
+# Node
+node_modules
+npm-debug.log*
+
+# Env
+.env
+backend/.env
+
+# OS / editors
+.DS_Store
+*.swp
+.idea
+.vscode
